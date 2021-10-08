@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/rmartin1985/README-generator/issues"
   },
-  "homepage": "https://github.com/rmartin1985/README-generator#readme"
+  "homepage": "https://github.com/rmartin1985/README-generator#readme",
+  "dependencies": {
+    "inquirer": "^8.2.0"
+  }
 }
