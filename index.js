@@ -1,5 +1,6 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
+const generateMarkdown = require('./utils/generateMarkdown.js');
 
 // TODO: Create an array of questions for user input
 const questions = () => {
@@ -25,7 +26,7 @@ const questions = () => {
                 if (nameInput) {
                     return true;
                 } else {
-                    console.log("Please enter a description of your project!");
+                    console.log("You must enter a description of your project!");
                 }
             }
         },
@@ -112,17 +113,23 @@ const questions = () => {
                 "ISC License",
                 "GNU GPLv3",
                 "Mozilla Public License 2.0",
-                "Apache License 2.0"
+                "Apache License 2.0",
+                "None"
             ]
         }
-    ]);
+    ])
+    .then(data => {
+        writeToFile("README.md", generateMarkdown(data));
+    })
 };
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) { }
 
 // TODO: Create a function to initialize app
-function init() { }
+function init() {
+    questions();
+ }
 
 // Function call to initialize app
 init();
