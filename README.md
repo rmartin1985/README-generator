@@ -11,7 +11,6 @@
   3. [Contributions](#contributions)
   4. [Questions](#questions)
   5. [License](#license)
-  6. [Tests](#tests)
   
 
   ## Installation
@@ -31,14 +30,11 @@
   ## Questions
 
   If you have any questions regarding this project, you can reach me at my GitHub account or by email at:
-  <br>
+  <br />
   Github: [rmartin1985](https://github.com/rmartin1985)
-  <br>
+  <br />
   Email: rmartin1985@att.net
 
   ## License
   [MIT](https://choosealicense.com/licenses/mit/)
-
-  ## Tests
-  No tests created for this project.
  
