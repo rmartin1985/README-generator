@@ -105,8 +105,7 @@ const questions = () => {
         }
     ])
     .then(data => {
-        console.log("Creating README file. Hang tight.");
-        writeToFile("README.md", generateMarkdown(data));
+        writeToFile("SAMPLE_README.md", generateMarkdown(data));
         console.log("README file has been created!")
     })
     .catch ((err) => {

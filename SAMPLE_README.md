@@ -1,9 +1,9 @@
-# README creator
+# Sample README
 
   [badge](https://img.shields.io/badge/License-MIT-blue?style=flat-square)
 
   ## Description
-  Make a readme file using the command line
+  This is the sample README for the project
 
   ## Table of Contents
   1. [Installation](##installation)
@@ -15,13 +15,13 @@
   
 
   ## Installation
-  run npm install for dependencies 
+  Sample instructions here
 
   ## Usage
-  gif
+  Usage gif here
 
   ## Contributions
-  Richard Lee
+  Some people helped me 
 
   ## Questions
 
