@@ -62,7 +62,7 @@ const questions = () => {
         },
         {
             type: "input",
-            name: "contributing",
+            name: "contributions",
             message: "Add guidliness for others to contribute to your project here",
             when: ({ confirmContribute }) => confirmContribute
         },
@@ -74,7 +74,7 @@ const questions = () => {
         },
         {
             type: "input",
-            name: "test",
+            name: "tests",
             message: "Enter any testing information here",
             when: ({ confirmTesting }) => confirmTesting
         },

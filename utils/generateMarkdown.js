@@ -11,15 +11,53 @@ function renderLicenseBadge(license) {
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
-function renderLicenseLink(license) {}
+function renderLicenseLink(license) {
+    let licenseLink = `(https://choosealicense.com/licenses/${value.toLowerCase()}/)`;
+    return `[${data.license}]${licenseLink}`
+}
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
-function renderLicenseSection(license) {}
+function renderLicenseSection(license) {
+    renderLicenseLink();
+}
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
   return `# ${data.title}
+
+  ${renderLicenseBadge(data.license)}
+
+  ## Description
+  ${data.description}
+
+  ## Table of Contents
+  1. [Instalation](##instalation)
+  2. [Usage](#usage)
+  3. [Contributions](#contributions)
+  4. [Questions](#questions)
+  5. [License](#license)
+  
+
+  ## Installation
+  ${data.installation}
+
+  ## Usage
+  ${data.usage}
+
+  ## Contributions
+  ${data.contributions}
+
+  ## Questions
+
+  If you have any questions regarding this project, you can reach me at my GitHub account or by email at:
+  <br>
+  Github: [${data.github}](https://github.com/${data.github})
+  <br>
+  Email: ${data.email}
+
+  ## License
+  ${renderLicenseLink(data.license)}
 `;
 }
 
