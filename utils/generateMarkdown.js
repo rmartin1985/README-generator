@@ -1,7 +1,7 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
-    const renderBadge = `[badge](https://img.shields.io/badge/License-${license}-blue?style=flat-square)`;
+    const renderBadge = `(https://img.shields.io/badge/License-${license}-blue.svg)`;
     if (license == "None") {
         return ""
     } else {

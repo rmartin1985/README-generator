@@ -1,9 +1,9 @@
-# Sample README
+# Sample Title
 
-  [badge](https://img.shields.io/badge/License-MIT-blue?style=flat-square)
+  (https://img.shields.io/badge/License-MIT-blue.svg)
 
   ## Description
-  This is the sample README for the project
+  Sample Description
 
   ## Table of Contents
   1. [Installation](##installation)
@@ -15,13 +15,13 @@
   
 
   ## Installation
-  Sample instructions here
+  Sample install instructions
 
   ## Usage
-  Usage gif here
+  Sample gif 
 
   ## Contributions
-  Some people helped me 
+  Sample Contributors
 
   ## Questions
 
@@ -35,5 +35,5 @@
   [MIT](https://choosealicense.com/licenses/mit/)
 
   ## Tests
-  No tests created for this project.
+  Sample Tests
  
