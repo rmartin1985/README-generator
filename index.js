@@ -69,7 +69,7 @@ const questions = () => {
         {
             type: "confirm",
             name: "confirmTesting",
-            message: "Woould you like to add any tests for your application?",
+            message: "Would you like to add any tests for your application?",
             default: false
         },
         {
@@ -109,11 +109,11 @@ const questions = () => {
             message: "Please select a license for this project",
             name: "license",
             choices: [
-                "MIT License",
-                "ISC License",
-                "GNU GPLv3",
-                "Mozilla Public License 2.0",
-                "Apache License 2.0",
+                "MIT",
+                "ISC",
+                "GPL-3.0",
+                "MPL-2.0",
+                "Apache-2.0",
                 "None"
             ]
         }
