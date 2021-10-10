@@ -11,18 +11,16 @@ function renderLicenseBadge(license) {
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
-function renderLicenseLink(license) {
-    let licenseLink = `(https://choosealicense.com/licenses/${value.toLowerCase()}/)`;
-    return `[${data.license}]${licenseLink}`
-}
+// function renderLicenseLink(license) {
+//     let licenseLink = `(https://choosealicense.com/licenses/${license.toLowerCase()}/)`;
+//     return `[${data.license}]${licenseLink}`
+// }
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
-function renderLicenseSection(license) {
-    renderLicenseLink();
-}
-
-function addingTesting()
+// function renderLicenseSection(license) {
+//     renderLicenseLink(license);
+// }
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
@@ -42,7 +40,7 @@ function generateMarkdown(data) {
   
 
   ## Installation
-  ${data.installation}
+  ${data.install}
 
   ## Usage
   ${data.usage}
@@ -59,7 +57,7 @@ function generateMarkdown(data) {
   Email: ${data.email}
 
   ## License
-  ${renderLicenseSection(data.license)}
+  
 `;
 }
 

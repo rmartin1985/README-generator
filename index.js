@@ -119,16 +119,30 @@ const questions = () => {
         }
     ])
     .then(data => {
+        console.log("Creating README file. Hang tight.");
         writeToFile("README.md", generateMarkdown(data));
+        console.log("README file has been created!")
+    })
+    .catch ((err) => {
+        console.log(err);
     })
 };
 
+function addingTesting(confirmTesting) {
+    if (confirmTesting) {
+        return `## Tests <br> ${data.tests}`
+    }
+}
+
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) { }
+function writeToFile(fileName, data) {
+    return fs.writeFileSync(fileName, data)
+}
 
 // TODO: Create a function to initialize app
 function init() {
     questions();
+    addingTesting();
  }
 
 // Function call to initialize app
