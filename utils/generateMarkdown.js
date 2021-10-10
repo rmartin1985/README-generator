@@ -3,28 +3,26 @@
 function renderLicenseBadge(license) {
     const renderBadge = `[badge](https://img.shields.io/badge/License-${license}-blue?style=flat-square)`;
     if (license == "None") {
-        return "No license used for this project"
+        return ""
     } else {
         return renderBadge;
     }
 }
 
-// TODO: Create a function that returns the license link
-// If there is no license, return an empty string
-// function renderLicenseLink(license) {
-//     let licenseLink = `(https://choosealicense.com/licenses/${license.toLowerCase()}/)`;
-//     return `[${data.license}]${licenseLink}`
-// }
+function renderTests(tests) {
+    const createTest = `${tests}`
+    if (tests === "") {
+        return `No tests created for this project.`
+    } else {
+        return createTest;
+    }
+}
 
-// TODO: Create a function that returns the license section of README
-// If there is no license, return an empty string
-// function renderLicenseSection(license) {
-//     renderLicenseLink(license);
-// }
+// found it easier just to generate the license in the generateMarkdown function instead of trying to use three separate functions in the starter code
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
-  return `# ${data.title}
+    return `# ${data.title}
 
   ${renderLicenseBadge(data.license)}
 
@@ -32,11 +30,12 @@ function generateMarkdown(data) {
   ${data.description}
 
   ## Table of Contents
-  1. [Instalation](##instalation)
+  1. [Installation](##installation)
   2. [Usage](#usage)
   3. [Contributions](#contributions)
   4. [Questions](#questions)
   5. [License](#license)
+  6. [Tests](#tests)
   
 
   ## Installation
@@ -57,8 +56,11 @@ function generateMarkdown(data) {
   Email: ${data.email}
 
   ## License
-  
-`;
+  [${data.license}](https://choosealicense.com/licenses/${data.license.toLowerCase()}/)
+
+  ## Tests
+  ${renderTests(data.tests)}
+ `;
 }
 
 module.exports = generateMarkdown;

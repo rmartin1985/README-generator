@@ -33,7 +33,7 @@ const questions = () => {
         {
             type: "input",
             name: "install",
-            message: "Describe the install instructions for your project (separate each instruction with a comma)",
+            message: "Describe the install instructions for your project",
             validate: nameInput => {
                 if (nameInput) {
                     return true;
@@ -55,28 +55,14 @@ const questions = () => {
             }
         },
         {
-            type: "confirm",
-            name: "confirmContribute",
-            message: "Would you like to add instructions for how others can contribute to your project?",
-            default: true
-        },
-        {
             type: "input",
             name: "contributions",
-            message: "Add guidliness for others to contribute to your project here",
-            when: ({ confirmContribute }) => confirmContribute
-        },
-        {
-            type: "confirm",
-            name: "confirmTesting",
-            message: "Would you like to add any tests for your application?",
-            default: false
+            message: "Add contributors credits here:",
         },
         {
             type: "input",
             name: "tests",
-            message: "Enter any testing information here",
-            when: ({ confirmTesting }) => confirmTesting
+            message: "Enter any testing information here:",
         },
         {
             type: "input",
@@ -128,12 +114,6 @@ const questions = () => {
     })
 };
 
-function addingTesting(confirmTesting) {
-    if (confirmTesting) {
-        return `## Tests <br> ${data.tests}`
-    }
-}
-
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
     return fs.writeFileSync(fileName, data)
@@ -142,7 +122,6 @@ function writeToFile(fileName, data) {
 // TODO: Create a function to initialize app
 function init() {
     questions();
-    addingTesting();
  }
 
 // Function call to initialize app
