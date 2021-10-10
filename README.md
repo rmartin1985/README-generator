@@ -1,9 +1,9 @@
-# README creator
+# README Generator
 
-  [badge](https://img.shields.io/badge/License-MIT-blue?style=flat-square)
+  ![](https://img.shields.io/badge/license-MIT-blue)
 
   ## Description
-  Make a readme file using the command line
+  This weeks challenge we were tasked with creating an app that will generate a README.md file using only the command line. By using Node.js, the user is given a series of prompts related to information in a typical professional README file. The user will see the questions in their command line and will input the data as they see fit. Once they have answered all the questions, a markdown file is created called SAMPLE_README with a table of contents created as well. 
 
   ## Table of Contents
   1. [Installation](##installation)
@@ -15,13 +15,18 @@
   
 
   ## Installation
-  run npm install for dependencies 
+  1. Fork this repository
+  2. Clone repository to your local directory
+  3. Make sure you have installed Node.js 
+  4. Run npm install to install the necessary dependencies (inquirer & fs)
+  5. type "node index.js" in the command line to run the app
 
   ## Usage
-  gif
+  [Screencastify video tutorial](https://watch.screencastify.com/v/DY00p1TjxmezfUV0J7HB)
 
   ## Contributions
-  Richard Lee
+  As always I was given some tutoring help from my tutor Richard Lee - (https://github.com/richard-d-lee)
+  Also would like to thank the direction of the TA's for the bootcamp for various help along the way. 
 
   ## Questions
 
