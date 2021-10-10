@@ -1,6 +1,6 @@
 # Sample Title
 
-  https://img.shields.io/badge/license-MIT-blue
+  ![](https://img.shields.io/badge/license-MIT-blue)
 
   ## Description
   Sample Description
