@@ -46,13 +46,15 @@ function generateMarkdown(data) {
 
   ## Contributions
   ${data.contributions}
+  <br />
+  [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](code_of_conduct.md)
 
   ## Questions
 
   If you have any questions regarding this project, you can reach me at my GitHub account or by email at:
-  <br>
+  <br />
   Github: [${data.github}](https://github.com/${data.github})
-  <br>
+  <br />
   Email: ${data.email}
 
   ## License
